@@ -1,0 +1,22 @@
+#container {
+    border-color: whitesmoke;
+    border-width: 0.5px;
+    height: auto;
+    padding-bottom: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.4);
+}
+
+.techincal-image {
+    width: 100%;
+    min-height: 250px;
+    height: auto;
+    background-color: gray;
+}
+
+.technical-content {
+    display: flex;
+}

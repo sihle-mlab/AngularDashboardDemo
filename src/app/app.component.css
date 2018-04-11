@@ -1,0 +1,41 @@
+.container {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-pane {
+    width: 400px;
+    height: 100%;
+    padding-top: 50px;
+    border-right: white;
+    border-right-width: 5px;
+    border-right-style: solid;
+    background-color: #142030;    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icon {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.mentor-name {
+    font-size: 1em;
+    color: white;
+    margin-top: 5px;
+}
+
+.main-pane {
+    flex-grow: 3;
+    height: 100%;
+    background-color: white;
+}
