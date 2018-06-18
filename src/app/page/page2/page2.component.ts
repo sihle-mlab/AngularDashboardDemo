@@ -16,6 +16,13 @@ export class Page2Component implements OnInit {
   public items : Observable<any[]>;
   dataSource = new MatTableDataSource(ELEMENT_DATA);
 
+  selectedValue: string;
+
+  options = [
+    {value: 'profile', viewValue: 'Profile'},
+    {value: 'logout', viewValue: 'Logout'}
+  ];
+
   constructor(public database: AngularFireDatabase) { }
 
   ngOnInit() {
@@ -35,6 +42,7 @@ export class Page2Component implements OnInit {
     filterValue = filterValue.toLowerCase(); // MatTableDataSource defaults to lowercase matches
     this.dataSource.filter = filterValue;
   }
+
 
 }
 

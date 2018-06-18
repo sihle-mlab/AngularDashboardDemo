@@ -19,7 +19,11 @@ import { AngularFireStorageModule } from 'angularfire2/storage';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { environment } from '../environments/environment';
 
-import {MatTableModule, MatToolbarModule, MatIconModule} from '@angular/material';
+import {MatTableModule, MatToolbarModule, MatIconModule, MatButtonModule, MatFormFieldModule, MatSelectModule} from '@angular/material';
+import { LoginComponent } from './page/login/login.component';
+import { AboutPageComponent } from './about-page/about-page.component';
+import { ServicesPageComponent } from './services-page/services-page.component';
+import { ContactPageComponent } from './contact-page/contact-page.component';
 
 
 @NgModule({
@@ -29,12 +33,19 @@ import {MatTableModule, MatToolbarModule, MatIconModule} from '@angular/material
     Page1Component,
     Page2Component,
     Page3Component,
-    TechnicalsComponent
+    TechnicalsComponent,
+    LoginComponent,
+    AboutPageComponent,
+    ServicesPageComponent,
+    ContactPageComponent
   ],
   imports: [
     MatTableModule,
     MatToolbarModule,
     MatIconModule,
+    MatButtonModule,
+    MatSelectModule,
+    MatFormFieldModule,
     AngularFireDatabaseModule,
     AngularFireAuthModule,
     AngularFireStorageModule,
